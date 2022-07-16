@@ -42,7 +42,8 @@ def summ_list(positive_list, negative_list):
         last_list.append(positive_list[i])
     
     return last_list   
-    
+
+   
 n = int(input('Введите число Фибоначи: '))   
 negative_list = neg_fibo(n)
 fibonaci_list = fibo(n)  
