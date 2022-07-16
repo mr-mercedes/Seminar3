@@ -18,13 +18,13 @@ def clear_list(some_list):
     for i in range (len(new_list)):
         if new_list[i] == 0:
             new_list[i], new_list[len(new_list) - 1] = new_list[len(new_list) - 1], new_list[i]
+            new_list.pop() 
             
-    new_list.pop() 
     return new_list
 
 
    
-my_list = [1.1, 1.2, 3.1, 5, 10.01]         
+my_list = [float(i) for i in input('Введите вещественные числа списка: ').split()]         
 result = max(clear_list(my_list)) - min(clear_list(my_list))
 print(result)
 
